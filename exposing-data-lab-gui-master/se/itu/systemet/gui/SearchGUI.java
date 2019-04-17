@@ -169,19 +169,16 @@ public class SearchGUI {
           if (f.getStateChange() == ItemEvent.SELECTED) {
                   minAlcoField.setEnabled(true);
                   minAlcoField.setText("");
+                  maxAlcoField.setEnabled(true);
+                  maxAlcoField.setText("");
+                  resultLabel.setText(SERVLET_URL);
               } else {
                 minAlcoField.setEnabled(false);
                 minAlcoField.setText("0");
-                resultLabel.setText(SERVLET_URL);
+                maxAlcoField.setEnabled(false);
+                maxAlcoField.setText("0");
               }
-              if (f.getStateChange() == ItemEvent.SELECTED) {
-                    maxAlcoField.setEnabled(true);
-                    maxAlcoField.setText("");
-                  } else {
-                    maxAlcoField.setEnabled(false);
-                    maxAlcoField.setText("0");
-                    resultLabel.setText(SERVLET_URL);
-                  }
+
 
         }
       });
@@ -222,11 +219,11 @@ public class SearchGUI {
     Query query = QueryFactory.getQuery();
     for (Param param : params() ) {
       query.addParam(param);
-      System.out.println("http://localhost:8080/search/products/all?" + query.toQueryString());
+      System.out.println(SERVLET_URL + query.toQueryString());
 
 
-      String link = "<html><a href=\"" + "http://localhost:8080/search/products/all?" +
-      query.toQueryString() + "\">" + "http://localhost:8080/search/products/all?" + query.toQueryString() + "</a></html>";
+      String link = "<html><a href=\"" + SERVLET_URL +
+      query.toQueryString() + "\">" + SERVLET_URL + query.toQueryString() + "</a></html>";
       this.uri = SERVLET_URL + query.toQueryString();
 
       resultLabel.setText(link);
