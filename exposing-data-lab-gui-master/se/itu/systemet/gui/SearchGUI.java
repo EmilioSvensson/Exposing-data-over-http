@@ -21,6 +21,8 @@ import se.itu.systemet.rest.QueryFactory;
  * A class representing the GUI for an application for
  * searching Systembolaget products.
  */
+
+ //Testar branch-funktionen
 public class SearchGUI {
 
   // Instance variables below - mostly Swing components for the UI
