@@ -23,8 +23,6 @@ import se.itu.systemet.rest.QueryFactory;
  */
 public class SearchGUI {
 
-  //Lägger till en kommentar för att testa github 
-
   // Instance variables below - mostly Swing components for the UI
   private JFrame frame; // this is the actual window
   private JPanel panel; // a panel is a surface to put other components on
