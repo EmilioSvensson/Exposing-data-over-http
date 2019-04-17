@@ -22,7 +22,7 @@ import se.itu.systemet.rest.QueryFactory;
  * searching Systembolaget products.
  */
 
- //Testar branch-funktionen
+ 
 public class SearchGUI {
 
   // Instance variables below - mostly Swing components for the UI
