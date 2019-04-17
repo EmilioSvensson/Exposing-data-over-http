@@ -23,6 +23,8 @@ import se.itu.systemet.rest.QueryFactory;
  */
 public class SearchGUI {
 
+  //Lägger till en kommentar för att testa github 
+
   // Instance variables below - mostly Swing components for the UI
   private JFrame frame; // this is the actual window
   private JPanel panel; // a panel is a surface to put other components on
@@ -86,7 +88,7 @@ public class SearchGUI {
     form.add(new JLabel("Minimum price:"));
     form.add(minPriceField);
     form.add(new JLabel("Maximum price:"));
-    
+
 
     resultLabel = new JLabel(SERVLET_URL);
     clearButton = new JButton("Clear");
