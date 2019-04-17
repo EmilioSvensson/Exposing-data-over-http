@@ -171,6 +171,7 @@ public class SearchGUI {
                   minAlcoField.setText("");
                   maxAlcoField.setEnabled(true);
                   maxAlcoField.setText("");
+                  resultLabel.setText(SERVLET_URL);
               } else {
                 minAlcoField.setEnabled(false);
                 minAlcoField.setText("0");
